@@ -50,7 +50,7 @@ h1 {
   position:relative;
   width: 220px;
   height: 220px;
-  margin:0;
+  margin: 0 auto;
   padding:0; 
   /*opacity: 0.7;*/
   background-color:rgba(0,0,0,0.4);
@@ -99,7 +99,7 @@ h1 {
 }
 
 .project .circle {
-  margin:0;
+  margin: 0 auto;
   padding:0;
   border-radius: 50%;
   position:relative;
@@ -302,6 +302,9 @@ h1 {
 @media (max-width: 768px) {
   body {
     padding-top:15px;
+  }
+  .section {
+    text-align: center;
   }
 }
 
