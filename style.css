@@ -1,0 +1,280 @@
+html { 
+  background: url(img/bg_3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+  height: 100%;
+  padding-top: 100px;
+}  
+
+h1 {
+  margin:0;
+  margin-bottom:20px;
+  padding:0;
+  font-size:38px;
+  font-weight: 300;
+  color:white;
+  opacity: 0.5;
+}
+
+.main {
+
+}
+
+.section {
+  margin-bottom:45px;
+}
+
+.section .content {
+  padding-top:50px;
+}
+
+.section.first .content {
+  padding-top:0;
+}
+
+.circle {
+  border-radius: 50%;
+  position:relative;
+  width: 220px;
+  height: 220px; 
+  /*opacity: 0.7;*/
+  background-color:rgba(0,0,0,0.4);
+  /*background-color:rgba(0, 172, 237,0.4);*/
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  /* width and height can be anything, as long as they're equal */
+}
+
+.circle h2 {
+  position:absolute;
+  top:90px; 
+  left:35px;
+  opacity: 1;
+  color:white;
+  font-size:35px;
+  margin:0;
+}
+
+
+.section-summary .circle:hover {
+  background-color:rgba(0, 172, 237,0.4);
+}
+
+.section-skills .circle h2 {
+  left:65px;
+}
+
+.section-skills .circle:hover {
+  background-color:rgba(65, 131, 196,0.4);
+}
+
+.section-experience .circle h2 {
+  left:20px;
+}
+
+.section-experience .circle:hover {
+  background-color:rgba(59, 89, 152,0.4);
+}
+
+.main-nav.nav-stacked>li+li {
+  margin:0;
+}
+
+#wrapper #content .page-hidden {
+  opacity:0;
+}
+
+#wrapper #content .page-active {
+  opacity:1;
+}
+
+.main-nav {
+    /* Size & position */
+    position:relative;
+    width:100%;
+    float:left;
+    margin:0;
+    margin-right:40px;
+
+    /* Styles */
+    
+    list-style: none;
+    font-weight: normal; /* Cancels previous font-weight: bold; */
+   
+    padding:0;
+    -webkit-box-shadow: 0 0 30px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 30px rgba(0,0,0,0.75);
+    box-shadow: 0 0 30px rgba(0,0,0,0.75);
+    opacity: 0.8;
+}
+
+.main-nav li {
+  color:#333;
+}
+
+.main-nav li a {
+  display: block;
+  background: #fff;
+  text-decoration: none;
+  color: #333;
+  font-size:15px;
+  border-left: 5px solid;
+  font-weight: 400;
+  padding: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-left:10px solid;
+}
+
+.main-nav li:first-child {
+  font-weight: 800;
+  font-size:15px;
+  padding:10px;
+  text-align: center;
+  border-left: 5px solid #184050;
+  background: #fff;
+}
+
+.social-buttons {
+  position: relative;
+  display: inline-block;
+  clear:both;
+  padding:15px;
+  text-align: center;
+  background:white;
+  opacity:0.2;
+  width:100%;
+}
+
+.main-nav li:nth-child(2) a {
+  border-left-color: #00ACED;
+}
+
+.main-nav li:nth-child(3) a {
+  border-left-color: #4183C4;
+}
+
+.main-nav li:nth-child(4) a {
+  border-left-color: #3B5998;
+}
+
+.main-nav li:nth-child(5) a {
+  border-left-color: #172D5C;
+}
+
+.main-nav:after {
+    border-color: #9bc7de transparent;
+    border-width: 6px 6px 0 6px ;
+    margin-top: -3px;
+}
+
+
+.section.first .page-header {
+  margin-top:0;
+}
+
+
+.main-nav li .tab i {
+  height:20px;
+  width:20px;
+  display:inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #525252;
+}
+
+.skills-list {
+  overflow: hidden;
+}
+
+.skills-list li {
+  float: left;
+  width: 185px;
+  padding-right: 20px;
+  word-wrap: break-word;
+}
+
+.position {
+  width:50%;
+  float:left;
+  margin:0;
+  margin-bottom:15px;
+}
+
+.position .title {
+  margin:0;
+  font-size:25px;
+  font-weight:normal;
+  color: white;
+  margin-bottom:8px;
+  opacity: 0.5;
+}
+
+.position .company-name {
+  margin:0;
+  font-size:18px;
+  color: white;
+  opacity: 0.8;
+}
+
+.position .dates {
+  font-size:12px;
+  margin-bottom:15px;
+}  
+
+.main-nav .glyphicon {
+  margin-right:10px;
+}
+
+[class^="iconsocial-"],
+[class*=" iconsocial-"] {
+  float:left;
+  margin:0;
+  margin-right:5px;
+  display: inline-block;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  background-position: 0; 
+  padding:0;
+}
+
+.iconsocial-email {
+  background-image: url("img/glyphicons_social_39_e-mail.png");
+}
+
+.iconsocial-linkedin {
+  background-image: url("img/glyphicons_social_17_linked_in.png");
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top:15px;
+  }
+}
+
+
+
