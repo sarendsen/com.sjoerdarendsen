@@ -4,12 +4,13 @@
 <head>
     <title>Sjoerd Arendsen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link href="style.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="screen" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <nav class="navbar mobile-nav navbar-fixed-top hidden-lg" role="navigation">
+    <nav class="navbar mobile-nav navbar-fixed-top hidden-lg hidden-print" role="navigation">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".mobile-nav-collapse">
@@ -29,11 +30,17 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
         </ul>
+        <div class="social-buttons-navbar navbar-text pull-right">
+            <a href="mailto:sjoerd@optixdesigns.com"><i class="iconsocial-email icon-large"></i></a>
+            <a href="http://www.linkedin.com/profile/view?id=7791827" target="_blank"><i class="iconsocial-linkedin icon-large"></i></a>
+            <a href="https://github.com/docc" target="_blank"><i class="iconsocial-github icon-large"></i></a>
+            <a href="javascript:window.print();"><i class="iconsocial-resume icon-large"></i></a>
+        </div>
       </div><!-- /.navbar-collapse -->
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-sx-12 col-sm-12 col-md-2 visible-lg">
+            <div class="col-sx-12 col-sm-12 col-md-2 visible-lg hidden-print">
                 <ul class="main-nav nav nav-stacked">
                     <li>Sjoerd Arendsen</li>
                     <li class="active">
@@ -42,7 +49,7 @@
                     </li>
                     <li>
                         <a href="#skills">
-                            <span class="glyphicon glyphicon-book"></span>Skills</a>
+                            <span class="glyphicon glyphicon-cog"></span>Skills</a>
                     </li>
                     <li>
                         <a href="#experience">
@@ -50,13 +57,15 @@
                     </li>
                     <li>
                         <a href="#projects">
-                            <span class="glyphicon glyphicon-td"></span>Projects</a>
+                            <span class="glyphicon glyphicon-book"></span>Projects</a>
                     </li>
 
                 </ul>
                 <div class="social-buttons">
                     <a href="mailto:sjoerd@optixdesigns.com"><i class="iconsocial-email icon-large"></i></a>
                     <a href="http://www.linkedin.com/profile/view?id=7791827" target="_blank"><i class="iconsocial-linkedin icon-large"></i></a>
+                    <a href="https://github.com/docc" target="_blank"><i class="iconsocial-github icon-large"></i></a>
+                    <a href="javascript:window.print();"><i class="iconsocial-resume icon-large"></i></a>
                 </div>
             </div>
             <div class="clearfix visible-xs"></div>
@@ -73,44 +82,26 @@
                                 Code geek with a love for online development and games. <span class="text-muted">Always looking for new things to learn and to try out.</span>
                             </p>
                             <div>
-                            <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Name
-                                    </td>
-                                    <td>
-                                        Sjoerd Arendsen
-                                    </td>
-                                    <td>
-                                        Born
-                                    </td>
-                                    <td>
-                                        16/04/1983
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        City
-                                    </td>
-                                    <td>
-                                        Amsterdam
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Languages
-                                    </td>
-                                    <td>
-                                        Dutch, English
-                                    </td>
-                                </tr>
-                            </tbody>
-                            </table>
-                        </div>
+                            <div class="row personalia">
+                                <div class="col-sx-12 col-sm-4 col-md-4">
+                                    <span class="key">Name</span> <span class="value">Sjoerd Arendsen</span>
+                                </div>
+                                <div class="col-sx-12 col-sm-4 col-md-4">
+                                    <span class="key">Born</span> <span class="value">26/04/1983</span>
+                                </div>
+                                <div class="col-sx-12 col-sm-4 col-md-4">
+                                    <span class="key">City</span> <span class="value">Amsterdam</span>
+                                </div>
+                                <div class="col-sx-12 col-sm-4 col-md-4">
+                                    <span class="key">Nationality</span> <span class="value">Dutch</span>
+                                </div>  
+                                <div class="col-sx-12 col-sm-4 col-md-4">
+                                    <span class="key">Languages</span> <span class="value">Dutch, English</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
+                </div>
                 </div>
 
                 <div class="section section-skills">
