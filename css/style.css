@@ -250,7 +250,7 @@ h1 {
   clear:both;
   padding:15px;
   text-align: center;
-  background-color:rgba(255, 255, 255,0.4);
+  background-color:rgba(255, 255, 255, 0.2);
   width:100%;
 }
 
@@ -392,7 +392,6 @@ table th {
 
 @media (max-width: 768px) {
   body {
-    padding-top:100px;
   }
   html {
     background: none;
@@ -408,6 +407,12 @@ table th {
   }
   .section {
     text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding-top:100px;
   }
 }
 
