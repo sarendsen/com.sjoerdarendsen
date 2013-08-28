@@ -3,6 +3,7 @@
 */
 
 $(function() {
+    /*
     $(document).scroll(function() {
         var cutoff = $(window).scrollTop();
         center = $(window).scrollTop() + $(window).height() / 2;
@@ -22,4 +23,5 @@ $(function() {
             }
         });
     });
+    */
  });
