@@ -354,9 +354,18 @@ h1 {
   background-image: url("img/glyphicons_social_17_linked_in.png");
 }
 
+table th,
+table td {
+  padding: 2px 20px 0 0;
+}
+
+table th {
+  font-weight:normal;
+  color:#4E4E4E;
+}
+
 @media (max-width: 768px) {
   body {
-    padding-top:15px;
   }
   .section {
     text-align: center;
