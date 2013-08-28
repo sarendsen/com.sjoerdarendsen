@@ -408,6 +408,13 @@ table th {
   .section {
     text-align: center;
   }
+  .position .title {
+    color: white;
+    opacity: 1;
+  }
+  .project h3 {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1200px) {
