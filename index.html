@@ -6,19 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link href="style.css" media="all" rel="stylesheet" type="text/css">
-    <script src="default.js" type="text/javascript"></script>
-    <script>
-    window.onload = function(e) {
-        init();
-    }
-    </script>
-
 </head>
 
 <body>
+    <nav class="navbar mobile-nav navbar-fixed-top hidden-lg" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".mobile-nav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Sjoerd Arendsen</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse mobile-nav-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#summary">Summary</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
     <div class="container">
         <div class="row">
-            <div class="col-sx-12 col-sm-12 col-md-2">
+            <div class="col-sx-12 col-sm-12 col-md-2 visible-lg">
                 <ul class="main-nav nav nav-stacked">
                     <li>Sjoerd Arendsen</li>
                     <li class="active">
@@ -43,7 +58,6 @@
                     <a href="mailto:sjoerd@optixdesigns.com"><i class="iconsocial-email icon-large"></i></a>
                     <a href="http://www.linkedin.com/profile/view?id=7791827" target="_blank"><i class="iconsocial-linkedin icon-large"></i></a>
                 </div>
-
             </div>
             <div class="clearfix visible-xs"></div>
             <div class="col-sx-12 col-sm-12 col-md-10 main">
