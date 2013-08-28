@@ -16,7 +16,7 @@ body {
   color: white;
   background-color: transparent;
   height: 100%;
-  padding-top: 100px;
+  padding-top: 150px;
 }  
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -36,6 +36,7 @@ h1 {
   font-size:38px;
   color:#4E4E4E;
 }
+
 .lead .text-muted {
   color:#4183C4;
 }
@@ -93,6 +94,7 @@ h1 {
 
 .section {
   margin-bottom:45px;
+  /*overflow: hidden;*/
 }
 
 .section .content {
@@ -131,7 +133,6 @@ h1 {
   margin:0;
 }
 
-
 .section-summary .circle:hover {
   background-color:rgba(0, 172, 237,0.4);
 }
@@ -148,7 +149,8 @@ h1 {
   left:20px;
 }
 
-.section-experience .circle:hover {
+.section-experience .circle:hover,
+.section.active .circle {
   background-color:rgba(59, 89, 152,0.4);
 }
 
@@ -302,10 +304,7 @@ h1 {
 }
 
 .position {
-  width:50%;
-  float:left;
-  margin:0;
-  margin-bottom:15px;
+
 }
 
 .position .title {
@@ -370,6 +369,19 @@ border-top: 0;
 
 @media (max-width: 768px) {
   body {
+    padding-top:100px;
+  }
+  html {
+    background: none;
+    background-color:#563d7c;
+  }
+  .lead {
+    font-size:38px;
+    color:white;
+  }
+
+  .lead .text-muted {
+    color:#999;
   }
   .section {
     text-align: center;
