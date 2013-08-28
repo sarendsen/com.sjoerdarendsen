@@ -356,12 +356,16 @@ h1 {
 
 table th,
 table td {
-  padding: 2px 20px 0 0;
+
 }
 
 table th {
   font-weight:normal;
   color:#4E4E4E;
+}
+
+.table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
+border-top: 0;
 }
 
 @media (max-width: 768px) {
