@@ -38,7 +38,7 @@ h1 {
 }
 
 .lead .text-muted {
-  color:#4183C4;
+  color:#563d7c;
 }
 
 .mobile-nav {
@@ -58,12 +58,12 @@ h1 {
   color: #333;
 }
 .mobile-nav .navbar-nav > li > a:hover {
-  color: #333;
+  color: #563d7c;
 }
 .mobile-nav .navbar-nav > .active > a,
 .mobile-nav .navbar-nav > .active > a:hover {
   color: #fff;
-  background-color: #333;
+  background-color: #563d7c;
 }
 
 .mobile-nav .navbar-toggle {
@@ -94,7 +94,7 @@ h1 {
 
 .section {
   margin-bottom:45px;
-  /*overflow: hidden;*/
+  display: inline-block;
 }
 
 .section .content {
@@ -113,7 +113,8 @@ h1 {
   margin: 0 auto;
   padding:0; 
   /*opacity: 0.7;*/
-  background-color:rgba(0,0,0,0.4);
+  background-color:rgba(86, 61, 124, 0.4);
+  /*background-color:#563d7c;*/
   /*background-color:rgba(0, 172, 237,0.4);*/
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -133,29 +134,25 @@ h1 {
   margin:0;
 }
 
-.section-summary .circle:hover {
+#section-summary .circle:hover {
   background-color:rgba(0, 172, 237,0.4);
 }
 
-.section-skills .circle h2 {
+#section-skills .circle h2 {
   left:65px;
 }
 
-.section-skills .circle:hover {
+#section-skills .circle:hover {
   background-color:rgba(65, 131, 196,0.4);
 }
 
-.section-experience .circle h2 {
+#section-experience .circle h2 {
   left:20px;
 }
 
-.section-experience .circle:hover,
+#section-experience .circle:hover,
 .section.active .circle {
   background-color:rgba(59, 89, 152,0.4);
-}
-
-.main-nav.nav-stacked>li+li {
-  margin:0;
 }
 
 .project .circle {
@@ -188,10 +185,18 @@ h1 {
   background: url(../img/aw.png) no-repeat top left; 
 }
 
-.section-projects .col-lg-3 {
+#section-projects .col-lg-3 {
   text-align: center;
   margin-bottom: 20px;
 }
+
+
+.main-nav-container {
+  position: fixed;
+  top: 150px;
+  width: 170px;
+}
+
 
 .main-nav {
     /* Size & position */
@@ -210,6 +215,10 @@ h1 {
     -moz-box-shadow: 0 0 30px rgba(0,0,0,0.75);
     box-shadow: 0 0 30px rgba(0,0,0,0.75);
     opacity: 0.8;
+}
+
+.main-nav.nav-stacked>li+li {
+  margin:0;
 }
 
 .main-nav li {
@@ -232,7 +241,7 @@ h1 {
 }
 
 .main-nav li a:hover,
-.main-nav li a:active {
+.main-nav li.active a {
   border-left:10px solid;
 }
 
@@ -414,6 +423,9 @@ table th {
   }
   .project h3 {
     opacity: 1;
+  }
+  .circle {
+    background-color:rgba(0, 0, 0, 0.4);
   }
 }
 
