@@ -113,47 +113,53 @@ h1 {
   height: 220px;
   margin: 0 auto;
   padding:0; 
-  /*opacity: 0.7;*/
-  background-color:rgba(86, 61, 124, 0.7);
-  /*background-color:#563d7c;*/
-  /*background-color:rgba(0, 172, 237,0.4);*/
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  /* width and height can be anything, as long as they're equal */
+  background: none rgba(86, 61, 124, 0.7);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  display: table;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.circle .inner {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  position:relative;
+  height:100%;
+  width:100%;
+  display: table-cell;
+  border-radius: 50%;
+  opacity:0;
+  text-align: center; 
+  vertical-align: middle;
 }
 
 .circle h2 {
   position:absolute;
-  top:90px; 
-  left:35px;
-  opacity: 1;
+  top:50%;
   color:white;
   font-size:35px;
   margin:0;
+  margin-top:-12px;
+  line-height: 24px;
+  width:100%;
 }
 
-#section-summary .circle:hover {
-  background-color:rgba(0, 172, 237,0.4);
+#section-summary .circle .inner {
+  background: url(../img/avatar.jpg) no-repeat center center;
+
 }
 
-#section-skills .circle h2 {
-  left:65px;
-}
+#section-summary .circle:hover .inner {
+  background: url(../img/avatar.jpg) no-repeat center center;
+  opacity:1;
 
-#section-skills .circle:hover {
-  background-color:rgba(65, 131, 196,0.4);
-}
-
-#section-experience .circle h2 {
-  left:20px;
-}
-
-#section-experience .circle:hover,
-.section.active .circle {
-  background-color:rgba(59, 89, 152,0.4);
 }
 
 .project .circle {
@@ -166,12 +172,16 @@ h1 {
   /*opacity: 0.7;*/
   /*background-color:rgba(0,0,0,0.4);*/
   /*background-color:rgba(0, 172, 237,0.4);*/
-  background: url(../img/pu.png) no-repeat top left; 
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  background: url(../img/pu.png) no-repeat top left;
+  -webkit-transition: all 4s ease-in-out;
+  -moz-transition: all 4s ease-in-outt;
+  -ms-transition: all 4s ease-in-out;
+  -o-transition: all 4s ease-in-out;
+  transition: all 4s ease-in-out;
+}
+
+.project .circle:hover {
+  background-position: bottom right;
 }
 
 .project p {
