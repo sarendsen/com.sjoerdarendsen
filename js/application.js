@@ -1,6 +1,12 @@
 !function ($) {
 
   $(function(){
+  	// Autoclose menu, cause we stay on the same page
+  	$('.navbar-collapse a').click(function() {
+    	$('.navbar-collapse').collapse('hide');
+	});
+
+  	// Add scrollspy to the game
     $('body').scrollspy({ target: '.navbar', offset: 180 });
     $("body").on('activate.bs.scrollspy', function (e) {
         // Also set the desktop menu
