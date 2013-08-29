@@ -56,6 +56,7 @@ h1 {
 }
 .mobile-nav .navbar-nav > li > a {
   color: #333;
+  font-size:14px;
 }
 .mobile-nav .navbar-nav > li > a:hover {
   color: #563d7c;
@@ -93,15 +94,15 @@ h1 {
 }
 
 .section {
-  margin-bottom:45px;
+  margin-bottom:55px;
   display: inline-block;
 }
 
-.section .content {
+#section-skills .content {
   padding-top:50px;
 }
 
-.section.first .content {
+#section-skills .content {
   padding-top:0;
 }
 
@@ -183,6 +184,14 @@ h1 {
 
 .project-aw .circle {
   background: url(../img/aw.png) no-repeat top left; 
+}
+
+.project-faqman .circle {
+  background: url(../img/faqman.png) no-repeat top left; 
+}
+
+.project-platform .circle {
+  background: url(../img/haring.png) no-repeat top left; 
 }
 
 #section-projects .col-lg-3 {
@@ -396,7 +405,6 @@ table th {
 
 .personalia .key {
   font-size:12px;
-  font-weight:500;
 }
 
 @media (max-width: 768px) {
@@ -434,4 +442,15 @@ table th {
     padding-top:100px;
   }
 }
+
+@media (max-width: 992px) {
+  .section .content,
+  #section-skills .content,
+  #section-summary .content {
+    padding-top:50px;
+  }
+}
+
+
+
 
