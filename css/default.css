@@ -113,7 +113,7 @@ h1 {
   height: 220px;
   margin: 0 auto;
   padding:0; 
-  background: none rgba(86, 61, 124, 0.7);
+  background-color: rgba(86, 61, 124, 0.7);
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
@@ -122,6 +122,10 @@ h1 {
   display: table;
   text-align: center;
   vertical-align: middle;
+}
+
+.circle:hover {
+  background-color: rgba(86, 61, 124, 0.0);
 }
 
 .circle .inner {
