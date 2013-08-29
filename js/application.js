@@ -1,7 +1,7 @@
 !function ($) {
 
   $(function(){
-    $('body').scrollspy({ target: '.navbar', offset: 100 });
+    $('body').scrollspy({ target: '.navbar', offset: 180 });
     $("body").on('activate.bs.scrollspy', function (e) {
         // Also set the desktop menu
         var href = $(e.target).find("a").attr("href");
