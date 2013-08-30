@@ -124,10 +124,6 @@ h1 {
   vertical-align: middle;
 }
 
-.circle:hover {
-  background-color: rgba(86, 61, 124, 0.0);
-}
-
 .circle .inner {
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -155,6 +151,10 @@ h1 {
   width:100%;
 }
 
+#section-summary .circle:hover {
+  background-color: rgba(86, 61, 124, 0.0);
+}
+
 #section-summary .circle .inner {
   background: url(../img/avatar.jpg) no-repeat center center;
 
@@ -163,7 +163,6 @@ h1 {
 #section-summary .circle:hover .inner {
   background: url(../img/avatar.jpg) no-repeat center center;
   opacity:1;
-
 }
 
 .project .circle {
