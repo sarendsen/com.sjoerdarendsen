@@ -1,6 +1,9 @@
+
+
 !function ($) {
 
   $(function(){
+
   	// Autoclose menu, cause we stay on the same page
   	$('.navbar-collapse a').click(function() {
     	$('.navbar-collapse').collapse('hide');
