@@ -27,11 +27,15 @@ body {
   margin-top:50px;
 }
 
+h2 {
+  font-size:35px;
+  color:#563d7c;
+}
+
 .circle,
 .project h2 {
   width:100%;
-  text-align: center;
-  padding:10px;
+  padding:10px 0px 10px 0px;
   display:block;
 }
 
@@ -47,4 +51,8 @@ body {
 
 .position .dates {
   font-size:11px;
+}
+
+.project .circle {
+  display:none;
 }
