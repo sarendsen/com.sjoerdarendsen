@@ -4,10 +4,12 @@
 
   $(function(){
 
+    $('[rel=tooltip]').tooltip();
+
   	// Autoclose menu, cause we stay on the same page
   	$('.navbar-collapse a').click(function() {
     	$('.navbar-collapse').collapse('hide');
-	});
+	  });
 
   	// Add scrollspy to the game
     $('body').scrollspy({ target: '.navbar', offset: 180 });

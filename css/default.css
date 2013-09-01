@@ -1,5 +1,5 @@
 html { 
-  background: url(../img/bg_3.jpg) no-repeat center center fixed; 
+  background: url(../img/bg_3.jpg) #B4B0B0 no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -210,6 +210,10 @@ h1 {
 #section-projects .col-lg-3 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+#section-projects {
+  text-align: center;
 }
 
 

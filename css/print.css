@@ -1,12 +1,17 @@
+@page 
+    {
+        size: auto;   /* auto is the initial value */
+        margin: 0mm;  /* this affects the margin in the printer settings */
+    }
+
 body {
   margin:0;
-  padding:0;
+  padding:50px;
   font-family: "Helvetica Neue", Helvetica, 'Lato', 'Arial', sans-serif;
   font-weight: 200;
   font-size: 17px;
   color: #333;
   height: 100%;
-  padding-top: 150px;
 }  
 
 .visible-print  { display: inherit !important; }
@@ -15,4 +20,31 @@ body {
 .personalia .key {
   font-size:12px;
   font-weight:500;
+}
+
+.section {
+  page-break-after: always;
+  margin-top:50px;
+}
+
+.circle,
+.project h2 {
+  width:100%;
+  text-align: center;
+  padding:10px;
+  display:block;
+}
+
+.position  {
+  clear:both;
+  margin-bottom:20px;
+}
+
+.position .title {
+  font-size:18px;
+  font-weight:bold;
+}
+
+.position .dates {
+  font-size:11px;
 }
