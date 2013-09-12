@@ -468,6 +468,9 @@ table th {
   .section {
 
   }
+  .section .container {
+    padding: 50px 0px 50px 0px;
+  }
   .position .title {
 
   }
