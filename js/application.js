@@ -16,7 +16,7 @@
 	  });
 
   	// Add scrollspy to the game
-    $('body').scrollspy({ target: '.navbar', offset: 400 });
+    $('body').scrollspy({ target: '.navbar', offset: 200 });
     /*
     $("body").on('activate.bs.scrollspy', function (e) {
         // Also set the desktop menu
