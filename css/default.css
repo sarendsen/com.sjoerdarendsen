@@ -458,8 +458,10 @@ table th {
   }
   html {
   }
+
   .lead {
     text-align: center;
+    font-size: 33px;
   }
 
   .lead .text-muted {
