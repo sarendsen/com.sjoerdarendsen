@@ -26,7 +26,7 @@
         $(mobile_item_selector).parent().addClass("active");
     });
     */
-   $(".nav li a[href^='#']").on('click', function(e) {
+   $(".nav li a[href^='#'], a.section-arrow").on('click', function(e) {
     e.preventDefault();
       $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 300);
     });
