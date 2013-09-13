@@ -117,7 +117,8 @@ h1 {
 
 .section .container {
   vertical-align: middle;
-  padding:120px 0px 87px 0px;
+  padding-top:120px;
+  padding-bottom: 87px;
 }
 
 #section-skills .content {
@@ -483,7 +484,8 @@ table th {
 
   }
   .section .container {
-    padding: 50px 0px 50px 0px;
+    padding-top:50px;
+    padding-bottom: 30px;
   }
   .position .title {
 
