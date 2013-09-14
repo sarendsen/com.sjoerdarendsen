@@ -189,7 +189,9 @@ h1 {
   width:100%;
 }
 
-#section-summary .circle:hover {
+#section-summary .circle:hover,
+#section-skills .circle:hover,
+#section-experience .circle:hover {
   background-color: rgba(86, 61, 124, 0.0);
 }
 
@@ -198,10 +200,30 @@ h1 {
 
 }
 
+#section-skills .circle .inner {
+  background: url(http://stream1.gifsoup.com/view7/2650431/god-typing-o.gif) no-repeat center center;
+}
+
+#section-experience .circle .inner {
+  background: url(http://i.imgur.com/fSZWD.gif) no-repeat -200px -1px;
+}
+
 #section-summary .circle:hover .inner {
   background: url(../img/avatar.jpg) no-repeat center center;
   opacity:1;
 }
+
+#section-skills .circle:hover .inner {
+  background: url(http://stream1.gifsoup.com/view7/2650431/god-typing-o.gif) no-repeat center center;
+  opacity:1;
+}
+
+#section-experience .circle:hover .inner {
+  /*background: url(http://2.bp.blogspot.com/-xLJVHlqArZk/TnlYCKUsXEI/AAAAAAAATg0/_9wHoNOYUn0/s1600/00TheDudeLeg.gif) no-repeat center center;*/
+  background: url(http://i.imgur.com/fSZWD.gif) no-repeat -200px -1px;
+  opacity:1;
+}
+
 
 .project .circle {
   margin: 0 auto;
