@@ -1,0 +1,9 @@
+{
+  "dokku": {
+    "volumes":[
+      {
+      	"host": "/var/lib/dokku/data/storage/sjoerdarendsen", "app": "/app/storage"
+      }
+    ]
+  }
+}
