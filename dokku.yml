@@ -1,2 +1,34 @@
 domains:
-  - nu.nl
+  disable: false  # disable vhost support
+  hosts:
+    - 'nu.nl'
+    - 'soccer.be'
+
+redis:
+  services:
+    redis_dokku:
+
+posgtres:
+  expose:
+    - 200
+  services:
+    dokku1:
+      expose:
+        - 50:25
+    dokku2:
+
+storage:
+  volumes:
+    '/var/dokku':
+      app: '/app/storage'
+    '/var/bla':
+      app: '/app/storage2' 
+
+redirects:
+  'nu.nl':
+    dest: 'bla.nl'
+    code: 301 # default, optional
+
+# should we destroy services when removed?
+globals:
+  clean: false    # if clean is set to true then we remove/destroy stuff.
