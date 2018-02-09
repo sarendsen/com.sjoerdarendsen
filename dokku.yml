@@ -1,5 +1,6 @@
 domains:
-  disable: false  # disable vhost support
+  disabled: true
+  enabled: true  # disable vhost support
   hosts:
     - 'nu.nl'
     - 'soccer.be'
