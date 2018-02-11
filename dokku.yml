@@ -12,11 +12,10 @@ redis:
 posgtres:
   expose:
     - 200
-  services:
-    dokku1:
-      expose:
-        - 50:25
-    dokku2:
+
+postgres.dokku1:
+  expose:
+    - 50:25
 
 storage:
   volumes:
