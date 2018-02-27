@@ -201,11 +201,11 @@ h1 {
 }
 
 #section-skills .circle .inner {
-  background: url(http://i.imgur.com/PYW88.gif) no-repeat center center;
+  background: url(//i.imgur.com/PYW88.gif) no-repeat center center;
 }
 
 #section-experience .circle .inner {
-  background: url(http://i.imgur.com/fSZWD.gif) no-repeat -200px -1px;
+  background: url(//i.imgur.com/fSZWD.gif) no-repeat -200px -1px;
 }
 
 #section-summary .circle:hover .inner {
@@ -214,13 +214,13 @@ h1 {
 }
 
 #section-skills .circle:hover .inner {
-  background: url(http://i.imgur.com/PYW88.gif) no-repeat center center;
+  background: url(//i.imgur.com/PYW88.gif) no-repeat center center;
   opacity:1;
 }
 
 #section-experience .circle:hover .inner {
   /*background: url(http://2.bp.blogspot.com/-xLJVHlqArZk/TnlYCKUsXEI/AAAAAAAATg0/_9wHoNOYUn0/s1600/00TheDudeLeg.gif) no-repeat center center;*/
-  background: url(http://i.imgur.com/fSZWD.gif) no-repeat -200px -1px;
+  background: url(//i.imgur.com/fSZWD.gif) no-repeat -200px -1px;
   opacity:1;
 }
 
