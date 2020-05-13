@@ -51,6 +51,7 @@ h4 {
 .cat {
   color: #a3be8c;
   font-size: inherit;
+  /* display: block; */
 }
 
 ul {
@@ -78,11 +79,31 @@ ul li {
 
 ul ul {
   margin-left:24px;
+  list-style-type: square;
+  /* display: inline-block; */
 }
 
 ul ul li {
   display: inline-block;
   border-left: 0px;
+}
+
+.xp > ul ul li:before,
+.skills > ul ul li:not(:first-child):before {
+content: '■';
+/* position: absolute; */
+/* border-right:2px solid black;
+border-bottom:2px solid black; */
+display: inline-block;
+color: #d08770;
+font-size: 8px;
+vertical-align: middle;
+margin-top: -2px;
+margin-right: 9px;
+margin-left: 0px;
+/* top: calc(50% - 4px);
+left: -20px;
+transform: translateY(-50%) rotate(-45deg); */
 }
 
 /* .xp > ul li,
