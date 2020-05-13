@@ -54,6 +54,32 @@ ul {
   padding: 0;
 }
 
+.skills > ul li {
+  border-left: 1px solid rgb(216, 222, 233);;
+}
+
+.skills > ul > li:before {
+  content: "-- ";
+}
+
+
+ul ul {
+  margin-left:20px;
+}
+
+.skills > ul ul li:before {
+  content: "-- ";
+}
+
+/* ul ul li {
+  border-left: 1px solid rgb(216, 222, 233);;
+} */
+
+
+/* ul ul li {
+  border-left: 1px solid rgb(216, 222, 233);;
+} */
+
 [class^="iconsocial-"],
 [class*=" iconsocial-"] {
   float:left;
@@ -92,4 +118,8 @@ ul {
 
 .iconsocial-resume {
   background-image: url("../img/glyphicons_364_cloud_download.png");
+}
+
+.sep {
+  border-right: 2px solid black
 }
