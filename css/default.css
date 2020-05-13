@@ -54,22 +54,40 @@ ul {
   padding: 0;
 }
 
+.xp > ul li,
 .skills > ul li {
-  border-left: 1px solid rgb(216, 222, 233);;
+  border-left: 1px solid rgb(216, 222, 233);
 }
 
+.xp > ul > li:before ,
 .skills > ul > li:before {
-  content: "-- ";
+  display: inline-block;
+  content: "";
+  border-top: 1px solid rgb(216, 222, 233);
+  width: 1rem;
+  margin: 0 0.5rem 0 0;
+  transform: translateY(-0.3rem);
 }
 
 
 ul ul {
-  margin-left:20px;
+  margin-left:30px;
 }
 
+.xp > ul ul li:before,
 .skills > ul ul li:before {
-  content: "-- ";
+  display: inline-block;
+  content: "";
+  border-top: 1px solid rgb(216, 222, 233);
+  width: 1rem;
+  margin: 0 0.5rem 0 0;
+  transform: translateY(-0.3rem);
 }
+
+/* .xp > ul ul li,
+.skills > ul ul li {
+  padding-left:10px;
+} */
 
 /* ul ul li {
   border-left: 1px solid rgb(216, 222, 233);;
