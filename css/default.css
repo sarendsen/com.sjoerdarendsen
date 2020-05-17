@@ -41,6 +41,7 @@ h1 {
 
 .me {
   background: url("/img/me.png") right center no-repeat;
+  min-height: 320px;
   padding-right: 120px;
 }
 
